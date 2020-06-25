@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Central_Org_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The endpoint URI to send data to (Please only enter the part after the host name)
+This is captured separately to the named credential as the URL for anonymous services is different to authenticated services.</inlineHelpText>
+        <label>Central Org URL</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_this_the_Central_org__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Check this box if this is the org that will be managing the central reporting. This controls the version of the Security Health Check App that is shown</inlineHelpText>
+        <label>Is this the Central org?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Named_Credentials__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Enter the named credentials to use.  If you wish to use anonymous services, you will still need to define a named credential.</inlineHelpText>
+        <label>Named Credentials</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Security_Superstar_Threshold__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of points needed to become a security superstar.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The number of points needed to become a security superstar.</inlineHelpText>
+        <label>Security Superstar Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Token__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The token for this org (this should be sent to you by the central org administrator)</inlineHelpText>
+        <label>Token</label>
+        <length>128</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Security Health Check Config</label>
+    <pluralLabel>Security Health Check Configs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
